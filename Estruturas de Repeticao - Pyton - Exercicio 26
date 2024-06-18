@@ -1,0 +1,11 @@
+# 26 - Faça um algoritmo que encontre o primeiro multiplo de 11, 13 ou 17 após um número dado.
+
+numero_dado = int(input('Informe um número: '))
+numero = numero_dado + 1
+
+while True:
+    numero = numero + 1
+    if numero % 11 == 0 or numero % 13 == 0 or numero % 17 == 0:
+        break
+
+print(f'O primeiro múltiplo de 11, 13 ou 17 após {numero_dado} é: {numero}')
